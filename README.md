@@ -2,9 +2,11 @@
 
 Predicting Amazon Sports & Outdoors ratings and generating personalized top-10 product recommendations using large-scale review and metadata features.
 
-## Results
+## Goal
 
-### Model Performance
+The goal of this project is to build a recommendation engine for Amazon’s Sports & Outdoors category by predicting user ratings and ranking products for personalized top-10 recommendations. The workflow includes dataset ingestion, feature engineering, sparsity analysis, baseline models, matrix factorization, regression models, and a hybrid method that delivers the strongest predictive performance.
+
+## Results
 
 | Model                       | RMSE     | MAE     | Precision@10 | Recall@10 | nDCG@10 |
 |-----------------------------|----------|---------|---------------|-----------|---------|
@@ -19,11 +21,6 @@ Predicting Amazon Sports & Outdoors ratings and generating personalized top-10 p
 - Hybrid model improved RMSE by **31.5%** over the global-average baseline  
 - Achieved near-perfect **nDCG@10 = 0.9981**, the strongest indicator of ranking quality  
 - Extremely high Recall@10 across models due to rating distribution characteristics  
-
-## Goal
-
-The goal of this project is to build a recommendation engine for Amazon’s Sports & Outdoors category by predicting user ratings and ranking products for personalized top-10 recommendations. The workflow includes dataset ingestion, feature engineering, sparsity analysis, baseline models, matrix factorization, regression models, and a hybrid method that delivers the strongest predictive performance.
-
 
 ## Built With
 
