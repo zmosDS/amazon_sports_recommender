@@ -2,9 +2,28 @@
 
 Predicting Amazon Sports & Outdoors ratings and generating personalized top-10 product recommendations using large-scale review and metadata features.
 
+## Results
+
+### Model Performance (Validation Set)
+
+| Model                       | RMSE     | MAE     | Precision@10 | Recall@10 | nDCG@10 |
+|-----------------------------|----------|---------|---------------|-----------|---------|
+| Hybrid (0.6 SVD + 0.4 Ridge)| **0.7505** | **0.5540** | 0.8388 | **0.9977** | **0.9981** |
+| SVD Matrix Factorization    | 1.0303  | 0.7129 | **0.8389** | 0.9970 | 0.9753 |
+| User + Item Bias            | 1.0846  | 0.7125 | 0.8390 | 0.9971 | 0.9755 |
+| Ridge Regression            | 1.0851  | 0.8132 | 0.8381 | 0.9970 | 0.9739 |
+| Global Average Baseline     | 1.0951  | 0.8325 | 0.8388 | 0.9969 | 0.9680 |
+
+**Highlights**
+
+- Hybrid model improved RMSE by **31.5%** over the global-average baseline  
+- Achieved near-perfect **nDCG@10 = 0.9981**, the strongest indicator of ranking quality  
+- Extremely high Recall@10 across models due to rating distribution characteristics  
+
 ## Goal
 
-The goal of this project is to build a recommendation engine for Amazon’s Sports & Outdoors category by predicting user ratings and ranking products for personalized top-10 recommendations. The work includes review ingestion, metadata merging, feature engineering, sparsity and quality analysis, baseline models, matrix factorization, regression models, and a hybrid recommender.
+The goal of this project is to build a recommendation engine for Amazon’s Sports & Outdoors category by predicting user ratings and ranking products for personalized top-10 recommendations. The workflow includes dataset ingestion, feature engineering, sparsity analysis, baseline models, matrix factorization, regression models, and a hybrid method that delivers the strongest predictive performance.
+
 
 ## Built With
 
@@ -24,7 +43,7 @@ The goal of this project is to build a recommendation engine for Amazon’s Spor
 - Dense subset creation for comparison (users and items with 5+ reviews)
 - Baseline models: global average and user + item bias
 - Advanced models: SVD matrix factorization, Ridge regression, and a hybrid recommender
-- Ranking metrics including Precision@10, Recall@10, and nDCG@10
+- Ranking metrics including: RMSE & nDCG@10
 - Final top-10 product recommendations generated from predicted ratings
 
 ## Files
