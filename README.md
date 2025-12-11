@@ -48,7 +48,7 @@ The goal of this project is to build a recommendation engine for Amazon’s Spor
 amazon_sports_recommender/
 ├── project_deliverables/
 │ └── amazon_sports_recommender_fullNB.ipynb  # Complete workflow (EDA, cleaning, modeling, ranking)
-├── workbook.html                             # HTML export of final deliverable
+│ └── workbook.html                           # HTML export of final deliverable
 ├── data_processing.ipynb                     # Data ingestion, merging, feature engineering
 ├── eda.ipynb                                 # Exploratory analysis, sparsity, quality indicators
 ├── modeling.ipynb                            # Baseline, SVD, Ridge, hybrid models + ranking metrics
