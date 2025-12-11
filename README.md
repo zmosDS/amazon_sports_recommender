@@ -4,7 +4,7 @@ Predicting Amazon Sports & Outdoors ratings and generating personalized top-10 p
 
 ## Results
 
-### Model Performance (Validation Set)
+### Model Performance
 
 | Model                       | RMSE     | MAE     | Precision@10 | Recall@10 | nDCG@10 |
 |-----------------------------|----------|---------|---------------|-----------|---------|
